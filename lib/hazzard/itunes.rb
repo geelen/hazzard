@@ -6,9 +6,6 @@ module Hazzard
       app.sources.get.select {|s|
         [:library, :shared_library].include? s.kind.get
       }
-    rescue Exception => ex
-      puts "#{ex.class}: Couldn't connect to iTunes: #{ex.backtrace.first}: #{ex.message}"
-      []
     end
 
     def player_state
