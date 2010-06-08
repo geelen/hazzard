@@ -11,7 +11,7 @@ begin
     gem.homepage = "http://github.com/geelen/hazzard"
     gem.authors = ["Glen Maddern"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency "mongoid", ">= 2.0.0.beta6"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
