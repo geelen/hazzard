@@ -1,7 +1,9 @@
 module Hazzard
   class Main
     def self.import_all
-      ITunes.instance.sources.each { |s| Models::Library.for(s) }
+      (Models::Library.all | ITunes.instance.sources.map {|source|
+        Models::Library.for source
+      }).each &:import!
     end
   end
 end

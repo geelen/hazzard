@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'hazzard'
+require File.dirname(__FILE__) + '/../lib/hazzard'
 
 Hazzard.main.import_all
