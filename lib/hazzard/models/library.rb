@@ -3,7 +3,6 @@ module Hazzard
     class Library
       include Mongoid::Document
 
-      field :persistent_id
       field :name
       field :active, :type => Boolean
       field :imported_at, :type => Time

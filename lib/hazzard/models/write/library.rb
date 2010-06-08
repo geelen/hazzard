@@ -1,8 +1,8 @@
 module Hazzard
   module Models
-    class << Library
-      def for(source)
-        
+    class Library
+      def self.for(source)
+
       end
     end
   end
